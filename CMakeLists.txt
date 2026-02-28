@@ -243,6 +243,8 @@ list(APPEND HWY_CONTRIB_SOURCES
     hwy/contrib/algo/find-inl.h
     hwy/contrib/algo/transform-inl.h
     hwy/contrib/unroller/unroller-inl.h
+    hwy/contrib/checksum/adler32-inl.h
+    hwy/contrib/checksum/crc32-inl.h
 )
 endif()  # HWY_ENABLE_CONTRIB
 
@@ -896,6 +898,8 @@ list(APPEND HWY_TEST_FILES
   hwy/contrib/thread_pool/thread_pool_test.cc
   hwy/contrib/thread_pool/topology_test.cc
   hwy/contrib/unroller/unroller_test.cc
+  hwy/contrib/checksum/adler32_test.cc
+  hwy/contrib/checksum/crc32_test.cc
 )
 endif()  # HWY_ENABLE_CONTRIB
 
